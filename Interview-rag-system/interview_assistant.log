@@ -1,0 +1,594 @@
+2026-04-25 17:08:13,193 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-25 17:08:13,194 - __main__ - INFO - 运行模式: web
+2026-04-25 17:08:13,194 - __main__ - INFO - 模型提供方: dashscope
+2026-04-25 17:08:13,194 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-25 17:08:13,194 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-25 17:08:13,194 - __main__ - INFO - 开始初始化知识库...
+2026-04-25 17:08:13,225 - src.document_processor - INFO - 成功加载文件: data/付成志-简历.docx, 包含 1 个文档
+2026-04-25 17:08:13,237 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 17:08:13,238 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 17:08:13,238 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 17:08:13,542 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 17:08:13,542 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-25 17:08:13,583 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 17:08:13,765 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 17:08:13,780 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 17:08:14,991 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-25 17:08:14,992 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 17:08:14,992 - __main__ - INFO - 知识库初始化成功
+2026-04-25 17:08:14,992 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-25 17:32:06,675 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-25 17:32:06,676 - __main__ - INFO - 运行模式: web
+2026-04-25 17:32:06,676 - __main__ - INFO - 模型提供方: dashscope
+2026-04-25 17:32:06,676 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-25 17:32:06,676 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-25 17:32:06,676 - __main__ - INFO - 开始初始化知识库...
+2026-04-25 17:32:06,677 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 17:32:06,678 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 17:32:06,678 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 17:32:06,679 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 17:32:06,787 - httpx - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2026-04-25 17:32:07,003 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 17:32:07,003 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-25 17:32:07,043 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 17:32:07,236 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 17:32:07,252 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 17:32:08,293 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-25 17:32:08,293 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 17:32:08,294 - __main__ - INFO - 知识库初始化成功
+2026-04-25 17:32:08,294 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-25 17:46:45,021 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-25 17:46:45,022 - __main__ - INFO - 运行模式: web
+2026-04-25 17:46:45,022 - __main__ - INFO - 模型提供方: dashscope
+2026-04-25 17:46:45,022 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-25 17:46:45,022 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-25 17:46:45,022 - __main__ - INFO - 开始初始化知识库...
+2026-04-25 17:46:45,022 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 17:46:45,024 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 17:46:45,024 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 17:46:45,025 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 17:46:45,334 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 17:46:45,334 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-25 17:46:45,372 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 17:46:45,601 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 17:46:45,620 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 17:46:46,640 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-25 17:46:46,641 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 17:46:46,641 - __main__ - INFO - 知识库初始化成功
+2026-04-25 17:46:46,641 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-25 17:51:16,493 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-25 17:51:16,493 - __main__ - INFO - 运行模式: web
+2026-04-25 17:51:16,493 - __main__ - INFO - 模型提供方: dashscope
+2026-04-25 17:51:16,493 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-25 17:51:16,493 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-25 17:51:16,494 - __main__ - INFO - 开始初始化知识库...
+2026-04-25 17:51:16,494 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 17:51:16,495 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 17:51:16,495 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 17:51:16,495 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 17:51:16,816 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 17:51:16,816 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-25 17:51:16,857 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 17:51:17,055 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 17:51:17,072 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 17:51:17,175 - httpx - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2026-04-25 17:51:18,093 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-25 17:51:18,093 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 17:51:18,093 - __main__ - INFO - 知识库初始化成功
+2026-04-25 17:51:18,093 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-25 19:33:12,691 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-25 19:33:12,692 - __main__ - INFO - 运行模式: web
+2026-04-25 19:33:12,692 - __main__ - INFO - 模型提供方: dashscope
+2026-04-25 19:33:12,692 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-25 19:33:12,692 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-25 19:33:12,692 - __main__ - INFO - 开始初始化知识库...
+2026-04-25 19:33:12,694 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 19:33:12,696 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 19:33:12,696 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 19:33:12,696 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 19:33:13,044 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 19:33:13,045 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-25 19:33:13,086 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 19:33:13,281 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:33:13,297 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:33:40,859 - httpx - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2026-04-25 19:33:41,820 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-25 19:33:41,820 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 19:33:41,821 - __main__ - INFO - 知识库初始化成功
+2026-04-25 19:33:41,821 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-25 19:36:07,590 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-25 19:36:07,591 - __main__ - INFO - 运行模式: web
+2026-04-25 19:36:07,591 - __main__ - INFO - 模型提供方: dashscope
+2026-04-25 19:36:07,591 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-25 19:36:07,591 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-25 19:36:07,592 - __main__ - INFO - 开始初始化知识库...
+2026-04-25 19:36:07,592 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 19:36:07,593 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 19:36:07,594 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 19:36:07,594 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 19:36:07,909 - httpx - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2026-04-25 19:36:07,920 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 19:36:07,920 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-25 19:36:07,972 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 19:36:08,175 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:36:08,191 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:36:09,984 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-25 19:36:09,985 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 19:36:09,985 - __main__ - INFO - 知识库初始化成功
+2026-04-25 19:36:09,986 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-25 19:37:40,747 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-25 19:37:40,750 - __main__ - INFO - 运行模式: web
+2026-04-25 19:37:40,754 - __main__ - INFO - 模型提供方: dashscope
+2026-04-25 19:37:40,754 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-25 19:37:40,774 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-25 19:37:40,775 - __main__ - INFO - 开始初始化知识库...
+2026-04-25 19:37:40,775 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 19:37:40,797 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 19:37:40,816 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 19:37:40,816 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 19:37:41,107 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 19:37:41,107 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-25 19:37:41,149 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 19:37:41,351 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:37:41,392 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:37:51,192 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-25 19:37:51,192 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 19:37:51,192 - __main__ - INFO - 知识库初始化成功
+2026-04-25 19:37:51,192 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-25 19:43:05,290 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 19:43:05,291 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 19:43:05,291 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 19:43:05,292 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 19:43:05,622 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 19:43:05,668 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 19:43:05,832 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:43:05,837 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:43:05,849 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-25 19:43:05,850 - main - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 19:43:06,452 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:43:46,329 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 19:43:46,331 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 19:43:46,331 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 19:43:46,332 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 19:43:46,653 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 19:43:46,695 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 19:43:46,797 - httpx - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2026-04-25 19:43:46,848 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:43:46,852 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:43:46,864 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-25 19:43:46,864 - main - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 19:43:46,872 - src.rag_pipeline - INFO - LLM初始化成功: qwen-plus
+2026-04-25 19:43:46,872 - src.rag_pipeline - INFO - RAG链初始化完成
+2026-04-25 19:43:46,873 - src.rag_pipeline - INFO - 执行查询: 请根据简历介绍你的教育背景（学校、专业、时间、GPA）。
+2026-04-25 19:43:47,428 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:43:50,951 - src.rag_pipeline - INFO - 查询完成, 找到 1 个相关文档
+2026-04-25 19:43:50,951 - src.rag_pipeline - INFO - 执行查询: 请基于简历讲述你的个人能力总结
+2026-04-25 19:44:01,482 - src.rag_pipeline - INFO - 查询完成, 找到 1 个相关文档
+2026-04-25 19:46:10,257 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-25 19:46:10,257 - __main__ - INFO - 运行模式: web
+2026-04-25 19:46:10,258 - __main__ - INFO - 模型提供方: dashscope
+2026-04-25 19:46:10,258 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-25 19:46:10,258 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-25 19:46:10,258 - __main__ - INFO - 开始初始化知识库...
+2026-04-25 19:46:10,258 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 19:46:10,259 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 19:46:10,260 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 19:46:10,261 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 19:46:11,232 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 19:46:11,236 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-25 19:46:11,311 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 19:46:11,849 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:46:11,915 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:46:12,009 - dashscope - ERROR - HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/embeddings/text-embedding/text-embedding (Caused by NameResolutionError("HTTPSConnection(host='dashscope.aliyuncs.com', port=443): Failed to resolve 'dashscope.aliyuncs.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-04-25 19:46:12,009 - src.vector_store - ERROR - 向量存储创建失败: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/embeddings/text-embedding/text-embedding (Caused by NameResolutionError("HTTPSConnection(host='dashscope.aliyuncs.com', port=443): Failed to resolve 'dashscope.aliyuncs.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-04-25 19:46:12,010 - __main__ - ERROR - 知识库初始化失败: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/embeddings/text-embedding/text-embedding (Caused by NameResolutionError("HTTPSConnection(host='dashscope.aliyuncs.com', port=443): Failed to resolve 'dashscope.aliyuncs.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-04-25 19:46:12,010 - __main__ - WARNING - 知识库初始化失败
+2026-04-25 19:46:12,010 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-25 19:48:41,428 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-25 19:48:41,429 - __main__ - INFO - 运行模式: web
+2026-04-25 19:48:41,429 - __main__ - INFO - 模型提供方: dashscope
+2026-04-25 19:48:41,429 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-25 19:48:41,429 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-25 19:48:41,429 - __main__ - INFO - 开始初始化知识库...
+2026-04-25 19:48:41,430 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 19:48:41,431 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 19:48:41,432 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 19:48:41,432 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 19:48:41,744 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 19:48:41,744 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-25 19:48:41,788 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 19:48:42,015 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:48:42,031 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 19:48:48,329 - httpx - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2026-04-25 19:48:48,827 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-25 19:48:48,828 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 19:48:48,828 - __main__ - INFO - 知识库初始化成功
+2026-04-25 19:48:48,828 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-25 21:28:40,636 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-25 21:28:40,636 - __main__ - INFO - 运行模式: web
+2026-04-25 21:28:40,637 - __main__ - INFO - 模型提供方: dashscope
+2026-04-25 21:28:40,637 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-25 21:28:40,637 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-25 21:28:40,637 - __main__ - INFO - 开始初始化知识库...
+2026-04-25 21:28:40,637 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-25 21:28:40,639 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-25 21:28:40,639 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-25 21:28:40,639 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-25 21:28:40,948 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-25 21:28:40,948 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-25 21:28:40,988 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-25 21:28:41,215 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 21:28:41,231 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-25 21:28:42,031 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-25 21:28:42,031 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-25 21:28:42,031 - __main__ - INFO - 知识库初始化成功
+2026-04-25 21:28:42,031 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 09:01:17,991 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 09:01:17,992 - __main__ - INFO - 运行模式: gradio
+2026-04-27 09:01:17,992 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 09:01:17,992 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 09:01:17,992 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 09:01:18,334 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 09:01:18,389 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 09:01:18,599 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:01:18,603 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:01:18,618 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 09:01:18,625 - src.rag_pipeline - INFO - LLM初始化成功: qwen-plus
+2026-04-27 09:01:18,626 - src.rag_pipeline - INFO - RAG链初始化完成
+2026-04-27 09:01:18,626 - __main__ - ERROR - 启动Gradio界面失败: Chatbot.__init__() got an unexpected keyword argument 'type'
+2026-04-27 09:02:27,399 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 09:02:27,401 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 09:02:27,401 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 09:02:27,402 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 09:02:27,776 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 09:02:27,833 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 09:02:27,998 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:02:28,003 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:02:28,017 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 09:02:28,017 - main - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 09:02:28,025 - src.rag_pipeline - INFO - LLM初始化成功: qwen-plus
+2026-04-27 09:02:28,026 - src.rag_pipeline - INFO - RAG链初始化完成
+2026-04-27 09:02:28,428 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-27 09:02:29,010 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-27 09:03:38,105 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 09:03:38,106 - __main__ - INFO - 运行模式: gradio
+2026-04-27 09:03:38,106 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 09:03:38,106 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 09:03:38,106 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 09:03:38,389 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 09:03:38,427 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 09:03:38,576 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:03:38,580 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:03:38,593 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 09:03:38,600 - src.rag_pipeline - INFO - LLM初始化成功: qwen-plus
+2026-04-27 09:03:38,601 - src.rag_pipeline - INFO - RAG链初始化完成
+2026-04-27 09:03:38,733 - __main__ - ERROR - 启动Gradio界面失败: 'ChatTongyi' object has no attribute 'model'
+2026-04-27 09:03:39,188 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-27 09:03:39,551 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-27 09:04:59,332 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 09:04:59,334 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 09:04:59,334 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 09:04:59,335 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 09:04:59,583 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 09:04:59,619 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 09:04:59,768 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:04:59,772 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:04:59,786 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 09:04:59,787 - main - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 09:04:59,794 - src.rag_pipeline - INFO - LLM初始化成功: qwen-plus
+2026-04-27 09:04:59,795 - src.rag_pipeline - INFO - RAG链初始化完成
+2026-04-27 09:05:00,221 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-27 09:05:00,752 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-27 09:05:16,064 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 09:05:16,064 - __main__ - INFO - 运行模式: gradio
+2026-04-27 09:05:16,064 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 09:05:16,064 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 09:05:16,064 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 09:05:16,263 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 09:05:16,286 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 09:05:16,458 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:05:16,461 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:05:16,478 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 09:05:16,483 - src.rag_pipeline - INFO - LLM初始化成功: qwen-plus
+2026-04-27 09:05:16,502 - src.rag_pipeline - INFO - RAG链初始化完成
+2026-04-27 09:05:17,055 - httpx - INFO - HTTP Request: GET http://localhost:8000/startup-events "HTTP/1.1 200 OK"
+2026-04-27 09:05:17,071 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-27 09:05:17,084 - httpx - INFO - HTTP Request: HEAD http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-04-27 09:05:17,484 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-27 09:05:46,285 - src.rag_pipeline - INFO - 执行查询: 请根据简历介绍你在华为云存储产品经理阶段的代表项目与量化结果。
+2026-04-27 09:05:46,975 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:06:03,937 - src.rag_pipeline - INFO - 查询完成, 找到 4 个相关文档
+2026-04-27 09:07:56,292 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 09:07:56,292 - __main__ - INFO - 运行模式: gradio
+2026-04-27 09:07:56,292 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 09:07:56,292 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 09:07:56,292 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 09:07:56,533 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 09:07:56,576 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 09:07:56,724 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:07:56,728 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:07:56,739 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 09:07:56,748 - src.rag_pipeline - INFO - LLM初始化成功: qwen-plus
+2026-04-27 09:07:56,768 - src.rag_pipeline - INFO - RAG链初始化完成
+2026-04-27 09:07:57,067 - httpx - INFO - HTTP Request: GET http://localhost:8000/startup-events "HTTP/1.1 200 OK"
+2026-04-27 09:07:57,083 - httpx - INFO - HTTP Request: HEAD http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-04-27 09:07:57,113 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-27 09:07:57,395 - httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+2026-04-27 09:07:57,768 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-04-27 09:08:25,588 - src.rag_pipeline - INFO - 执行查询: 请根据简历介绍你在华为云存储产品经理阶段的代表项目与量化结果。
+2026-04-27 09:08:26,101 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:08:46,280 - src.rag_pipeline - INFO - 查询完成, 找到 4 个相关文档
+2026-04-27 09:12:50,998 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 09:12:50,998 - __main__ - INFO - 运行模式: api
+2026-04-27 09:12:50,998 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 09:12:50,998 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 09:12:50,998 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 09:12:50,998 - __main__ - INFO - 启动API服务: http://0.0.0.0:8000
+2026-04-27 09:35:37,265 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 09:35:37,268 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 09:35:37,268 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 09:35:37,269 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 09:35:37,577 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 09:35:37,616 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 09:35:37,776 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:35:37,780 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:35:37,793 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 09:35:37,794 - main - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 09:35:37,803 - src.rag_pipeline - INFO - LLM初始化成功: qwen-plus
+2026-04-27 09:35:37,803 - src.rag_pipeline - INFO - RAG链初始化完成
+2026-04-27 09:35:37,804 - src.rag_pipeline - INFO - 执行查询: 作为产品经理需要承担哪些角色或职责？
+2026-04-27 09:35:38,280 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 09:35:53,999 - src.rag_pipeline - INFO - 查询完成, 找到 5 个相关文档
+2026-04-27 09:35:53,999 - src.rag_pipeline - INFO - 执行查询: 不需要根据简历答复，我就只问你产品经理需要承担哪些角色？
+2026-04-27 09:36:02,338 - src.rag_pipeline - INFO - 查询完成, 找到 5 个相关文档
+2026-04-27 09:36:02,338 - src.rag_pipeline - INFO - 执行查询: 请根据简历介绍你的教育背景（学校、专业、时间、GPA）。
+2026-04-27 09:36:05,819 - src.rag_pipeline - INFO - 查询完成, 找到 1 个相关文档
+2026-04-27 10:29:43,621 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 10:29:43,622 - __main__ - INFO - 运行模式: web
+2026-04-27 10:29:43,622 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 10:29:43,622 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 10:29:43,622 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 10:29:43,622 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 10:29:43,624 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 10:29:43,625 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 10:29:43,626 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 10:29:43,627 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 10:29:43,926 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 10:29:43,926 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-27 10:29:43,965 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 10:29:44,270 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 10:29:44,296 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 10:29:45,327 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-27 10:29:45,327 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 10:29:45,328 - __main__ - INFO - 知识库初始化成功
+2026-04-27 10:29:45,328 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 10:52:43,061 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 10:52:43,061 - __main__ - INFO - 运行模式: web
+2026-04-27 10:52:43,061 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 10:52:43,061 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 10:52:43,061 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 10:52:43,061 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 10:52:43,063 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 10:52:43,064 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 10:52:43,064 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 10:52:43,064 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 10:52:43,335 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 10:52:43,336 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-27 10:52:43,371 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 10:52:43,574 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 10:52:43,589 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 10:52:44,711 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-27 10:52:44,712 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 10:52:44,712 - __main__ - INFO - 知识库初始化成功
+2026-04-27 10:52:44,712 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 10:56:05,491 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 10:56:05,492 - __main__ - INFO - 运行模式: web
+2026-04-27 10:56:05,492 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 10:56:05,492 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 10:56:05,492 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 10:56:05,492 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 10:56:05,493 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 10:56:05,494 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 10:56:05,494 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 10:56:05,495 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 10:56:05,741 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 10:56:05,778 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 10:56:06,239 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 10:56:06,241 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 10:56:06,254 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 10:56:06,255 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 10:56:06,255 - __main__ - INFO - 知识库初始化成功
+2026-04-27 10:56:06,255 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 11:04:02,125 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 11:04:02,126 - __main__ - INFO - 运行模式: web
+2026-04-27 11:04:02,126 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 11:04:02,126 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 11:04:02,126 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 11:04:02,126 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 11:04:02,127 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 11:04:02,128 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 11:04:02,128 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 11:04:02,128 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 11:04:02,432 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 11:04:02,433 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-27 11:04:02,480 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 11:04:02,734 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:04:02,749 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:04:03,749 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-27 11:04:03,749 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 11:04:03,749 - __main__ - INFO - 知识库初始化成功
+2026-04-27 11:04:03,749 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 11:14:06,775 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 11:14:06,776 - __main__ - INFO - 运行模式: web
+2026-04-27 11:14:06,776 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 11:14:06,776 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 11:14:06,776 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 11:14:06,776 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 11:14:06,777 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 11:14:06,778 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 11:14:06,779 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 11:14:06,779 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 11:14:07,066 - httpx - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2026-04-27 11:14:07,088 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 11:14:07,088 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-27 11:14:07,132 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 11:14:07,331 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:14:07,351 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:14:08,523 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-27 11:14:08,523 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 11:14:08,524 - __main__ - INFO - 知识库初始化成功
+2026-04-27 11:14:08,524 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 11:15:44,969 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 11:15:44,970 - __main__ - INFO - 运行模式: web
+2026-04-27 11:15:44,970 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 11:15:44,970 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 11:15:44,970 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 11:15:44,970 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 11:15:44,971 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 11:15:44,972 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 11:15:44,972 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 11:15:44,973 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 11:15:45,339 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 11:15:45,381 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 11:15:45,588 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:15:45,612 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:15:45,644 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 11:15:45,645 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 11:15:45,645 - __main__ - INFO - 知识库初始化成功
+2026-04-27 11:15:45,645 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 11:26:34,033 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 11:26:34,033 - __main__ - INFO - 运行模式: web
+2026-04-27 11:26:34,034 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 11:26:34,034 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 11:26:34,034 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 11:26:34,034 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 11:26:34,035 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 11:26:34,036 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 11:26:34,036 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 11:26:34,037 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 11:26:34,321 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 11:26:34,357 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 11:26:34,519 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:26:34,521 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:26:34,535 - src.vector_store - INFO - 向量存储加载成功: 16 个文档块
+2026-04-27 11:26:34,536 - src.vector_store - WARNING - 检测到向量库文档数不一致(existing=16, expected=8)，执行重建
+2026-04-27 11:26:34,539 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 11:26:34,568 - httpx - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2026-04-27 11:26:34,572 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:26:34,580 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:26:37,654 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-27 11:26:37,654 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 11:26:37,654 - __main__ - INFO - 知识库初始化成功
+2026-04-27 11:26:37,654 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 11:36:20,657 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 11:36:20,658 - __main__ - INFO - 运行模式: web
+2026-04-27 11:36:20,658 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 11:36:20,658 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 11:36:20,658 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 11:36:20,658 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 11:36:20,658 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 11:36:20,659 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 11:36:20,659 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 11:36:20,660 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 11:36:20,919 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 11:36:20,962 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 11:36:21,104 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:36:21,108 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:36:21,120 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 11:36:21,120 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 11:36:21,120 - __main__ - INFO - 知识库初始化成功
+2026-04-27 11:36:21,120 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 11:39:31,552 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 11:39:31,553 - __main__ - INFO - 运行模式: web
+2026-04-27 11:39:31,553 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 11:39:31,553 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 11:39:31,553 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 11:39:31,553 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 11:39:31,554 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 11:39:31,555 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 11:39:31,555 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 11:39:31,556 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 11:39:31,808 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 11:39:31,854 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 11:39:32,004 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:39:32,006 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 11:39:32,016 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 11:39:32,016 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 11:39:32,016 - __main__ - INFO - 知识库初始化成功
+2026-04-27 11:39:32,017 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 12:38:53,006 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 12:38:53,007 - __main__ - INFO - 运行模式: web
+2026-04-27 12:38:53,007 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 12:38:53,007 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 12:38:53,007 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 12:38:53,007 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 12:38:53,008 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 12:38:53,009 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 12:38:53,010 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 12:38:53,010 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 12:38:53,564 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 12:38:53,617 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 12:38:53,912 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 12:38:53,918 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 12:38:53,948 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 12:38:53,948 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 12:38:53,948 - __main__ - INFO - 知识库初始化成功
+2026-04-27 12:38:53,949 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 12:44:59,926 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 12:44:59,926 - __main__ - INFO - 运行模式: web
+2026-04-27 12:44:59,926 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 12:44:59,926 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 12:44:59,927 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 12:44:59,927 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 12:44:59,927 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 12:44:59,927 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 12:44:59,928 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 12:44:59,928 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 12:44:59,932 - httpx - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+2026-04-27 12:45:00,215 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 12:45:00,255 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 12:45:00,403 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 12:45:00,406 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 12:45:00,419 - src.vector_store - INFO - 向量存储加载成功: 8 个文档块
+2026-04-27 12:45:00,419 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 12:45:00,420 - __main__ - INFO - 知识库初始化成功
+2026-04-27 12:45:00,420 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 13:05:14,541 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 13:05:14,542 - __main__ - INFO - 运行模式: web
+2026-04-27 13:05:14,542 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 13:05:14,542 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 13:05:14,542 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 13:05:14,542 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 13:05:14,543 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 13:05:14,544 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 13:05:14,544 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 13:05:14,545 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 13:05:14,854 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 13:05:14,855 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-27 13:05:14,894 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 13:05:15,110 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 13:05:15,125 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 13:05:16,243 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-27 13:05:16,258 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 13:05:16,258 - __main__ - INFO - 知识库初始化成功
+2026-04-27 13:05:16,258 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000
+2026-04-27 15:44:25,229 - __main__ - INFO - 启动个人面试助手 v1.0.0
+2026-04-27 15:44:25,229 - __main__ - INFO - 运行模式: web
+2026-04-27 15:44:25,229 - __main__ - INFO - 模型提供方: dashscope
+2026-04-27 15:44:25,230 - __main__ - INFO - LLM模型: qwen-plus
+2026-04-27 15:44:25,230 - __main__ - INFO - 嵌入模型: text-embedding-v2
+2026-04-27 15:44:25,230 - __main__ - INFO - 开始初始化知识库...
+2026-04-27 15:44:25,230 - src.document_processor - INFO - 简历文件识别完成: 个人简历.md
+2026-04-27 15:44:25,231 - src.document_processor - INFO - 成功加载文件: data/个人简历.md, 包含 1 个文档
+2026-04-27 15:44:25,236 - src.document_processor - INFO - 成功加载文件: data/additional_docs/产品经理任职要求.md, 包含 1 个文档
+2026-04-27 15:44:25,236 - src.document_processor - INFO - 目录文档加载完成，共 2 个文档对象
+2026-04-27 15:44:25,237 - src.document_processor - INFO - 文档分割完成: 2 -> 8 个块
+2026-04-27 15:44:26,138 - src.vector_store - INFO - 嵌入模型初始化成功: text-embedding-v2
+2026-04-27 15:44:26,138 - src.vector_store - WARNING - 向量存储目录不存在: chroma_db
+2026-04-27 15:44:26,183 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-04-27 15:44:26,429 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 15:44:26,444 - chromadb.telemetry.product.posthog - ERROR - Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-04-27 15:44:27,604 - src.vector_store - INFO - 向量存储创建成功: 8 个文档块
+2026-04-27 15:44:27,604 - __main__ - INFO - 知识库初始化完成，共 8 个文档块
+2026-04-27 15:44:27,604 - __main__ - INFO - 知识库初始化成功
+2026-04-27 15:44:27,604 - __main__ - INFO - 启动Web界面: http://0.0.0.0:8000

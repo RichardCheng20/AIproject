@@ -1,0 +1,23 @@
+# requirements.txt
+langchain==0.3.0
+langchain-community==0.3.0
+langchain-core==0.3.0
+langchain-chroma==0.1.4
+langchain-text-splitters==0.3.0
+chromadb==0.4.24
+ollama==0.5.0
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+pydantic==2.9.2
+pydantic-settings==2.4.0
+python-multipart==0.0.9
+beautifulsoup4==4.12.3
+markdown==3.6
+jinja2==3.1.4
+python-dotenv==1.0.1
+aiofiles==23.2.1
+gradio==4.36.1
+pyyaml==6.0.1
+dashscope
+docx2txt
+python-docx

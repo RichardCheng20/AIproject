@@ -1,0 +1,64 @@
+dashscope:
+  api_key: sk-cda26340ed0f48c29c090fd5b0b21f1c
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+knowledge_base:
+  data_dir: ./data
+  main_file: interview_knowledge.txt
+  resume_file: 个人简历.md
+  supported_extensions:
+  - .txt
+  - .md
+  - .pdf
+  - .docx
+logging:
+  file: interview_assistant.log
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  level: INFO
+model:
+  embedding: text-embedding-v2
+  llm: qwen-plus
+  max_tokens: 1024
+  provider: dashscope
+  temperature: 0.3
+ollama:
+  base_url: http://localhost:11434
+  timeout: 120
+server:
+  host: 0.0.0.0
+  port: 8000
+  reload: false
+  workers: 4
+system:
+  name: 面试助手
+  version: 1.0.0
+conversation:
+  enable_memory: true
+  memory_window: 8
+  enable_intent_classifier: true
+  intent_classifier_mode: hybrid
+text_processing:
+  chunk_overlap: 150
+  chunk_size: 800
+  separators:
+  - '
+
+
+    '
+  - '
+
+    '
+  - 。
+  - ；
+  - ，
+  - ' '
+  - ''
+vector_store:
+  collection_name: interview_knowledge
+  persist_directory: ./chroma_db
+  relevance_threshold: 0.35
+  recall_k: 30
+  search_k: 5
+  enable_reranker: true
+  rerank_top_n: 6
+  min_rerank_score: 0.08
+  similarity_metric: cosine

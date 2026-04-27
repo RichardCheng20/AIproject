@@ -1,0 +1,78 @@
+version: '3.8'
+
+# 定义Docker Compose服务配置
+services:
+  # Ollama大语言模型服务容器配置
+  ollama:
+    # 使用的Docker镜像名称和标签
+    image: ollama/ollama:latest
+    # 容器实例名称
+    container_name: interview-ollama
+    # 端口映射配置，将主机端口11434映射到容器端口11434
+    ports:
+      - "11434:11434"
+    # 数据卷挂载配置，持久化存储Ollama模型数据
+    volumes:
+      - ollama_data:/root/.ollama
+    # 重启策略：除非手动停止，否则自动重启
+    restart: unless-stopped
+    # 环境变量配置，设置Ollama服务监听所有网络接口
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+    # 容器启动命令：启动Ollama服务并预加载指定模型
+    # 1. 启动Ollama服务后台运行
+    # 2. 等待5秒确保服务启动完成
+    # 3. 下载qwen2.5:3b大语言模型
+    # 4. 下载nomic-embed-text嵌入模型
+    command: >
+      sh -c "ollama serve &
+             sleep 5 &&
+             ollama pull qwen2.5:3b &&
+             ollama pull nomic-embed-text &&
+             wait"
+
+  # RAG API应用服务容器配置
+  interview-api:
+    # 构建上下文路径，从当前目录构建镜像
+    build: .
+    # 容器实例名称
+    container_name: interview-rag-api
+    # 端口映射配置，将主机端口8000映射到容器端口8000
+    ports:
+      - "8000:8000"
+    # 依赖关系配置，确保Ollama服务先于本服务启动
+    depends_on:
+      - ollama
+    # 环境变量配置
+    environment:
+      # 设置Ollama服务的基础URL，用于API调用
+      - OLLAMA_BASE_URL=http://ollama:11434
+      # 设置应用日志级别
+      - LOG_LEVEL=INFO
+    # 数据卷挂载配置，实现数据共享和持久化存储
+    volumes:
+      # 挂载应用数据目录
+      - ./data:/app/data
+      # 挂载Chroma向量数据库目录
+      - ./chroma_db:/app/chroma_db
+      # 挂载应用日志目录
+      - ./logs:/app/logs
+    # 重启策略：除非手动停止，否则自动重启
+    restart: unless-stopped
+    # 容器启动命令：启动Python应用，以API模式运行并初始化知识库
+    command: >
+      sh -c "python main.py --mode api --init-kb"
+
+# 定义命名数据卷配置
+volumes:
+  # Ollama数据持久化卷配置
+  ollama_data:
+    # 使用本地驱动程序
+    driver: local
+
+# 定义网络配置
+networks:
+  # 默认网络配置
+  default:
+    # 自定义网络名称
+    name: interview-network
