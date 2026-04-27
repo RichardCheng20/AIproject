@@ -6,7 +6,9 @@
 
 **项目截图：**
 
-![image-20260427161115042](/Users/frank/Library/Application Support/typora-user-images/image-20260427161115042.png)
+![示例图片2](./images/readme-pic2.png)
+
+
 
 ## 1. 项目定位与目标
 
