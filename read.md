@@ -67,7 +67,65 @@
 
 ## 4. 系统架构设计
 
-### 4.1 模块划分
+### 4.1 系统架构总览图
+
+下图从**接入方式**、**在线问答链路**与**离线建库链路**三部分概括当前实现（反思仅在非流式 `POST /api/query` 中启用；流式接口不走反思）。
+
+```mermaid
+flowchart TB
+  subgraph access["接入层"]
+    WEB["自定义 Web<br/>templates + static"]
+    REST["REST / SSE<br/>web_api.py"]
+    GR["Gradio<br/>chat_interface.py"]
+  end
+
+  subgraph entry["启动入口"]
+    MAIN["main.py<br/>api · web · gradio"]
+  end
+
+  subgraph rag["RAG 核心 · rag_pipeline.py"]
+    ROUTE["快慢路由<br/>router · 前端 route_override"]
+    RET["Chroma 向量检索<br/>慢路径可双查合并"]
+    POST["重排 · 双阈值过滤<br/>来源优先级 · 来源策略"]
+    GEN["Prompt + LLM 生成"]
+    REFL["reflection.py<br/>校验 / 单次重写 · 非流式"]
+    ROUTE --> RET --> POST --> GEN --> REFL
+  end
+
+  subgraph offline["知识库构建"]
+    DP["document_processor.py<br/>加载 · 切块 · 元数据"]
+    VS["vector_store.py<br/>Embedding 写入 Chroma"]
+    DP --> VS
+  end
+
+  subgraph persist["持久化与模型"]
+    DATA[("data/ · 简历与补充资料")]
+    CHROMA[("chroma_db/")]
+    MODELS["LLM / Embedding<br/>Ollama · DashScope"]
+  end
+
+  subgraph cfg["配置"]
+    YAML["config.yaml · .env<br/>config.py"]
+  end
+
+  MAIN --> REST
+  MAIN --> GR
+  WEB --> REST
+  REST --> ROUTE
+  GR --> ROUTE
+
+  DATA --> DP
+  VS --> CHROMA
+  CHROMA --> RET
+  MODELS --> VS
+  ROUTE --> MODELS
+  GEN --> MODELS
+  REFL --> MODELS
+  YAML -.-> ROUTE
+  YAML -.-> VS
+```
+
+### 4.2 模块划分
 
 - `main.py`：启动入口，支持 `api/web/gradio` 模式与 `--init-kb` 初始化开关
 - `src/config.py`：统一配置中心（配置文件 + 环境变量覆盖）
@@ -77,7 +135,7 @@
 - `src/web_api.py`：REST API 与流式接口
 - `src/chat_interface.py`：Gradio 交互封装
 
-### 4.2 数据流（核心问答链路）
+### 4.3 数据流（核心问答链路）
 
 1. 用户提问进入 API 或 UI。
 2. 执行相似度检索（Top-K）。
@@ -87,7 +145,7 @@
 6. 若无有效证据，直接拒答；否则组装上下文送入 LLM。
 7. 返回答案与可追溯证据片段。
 
-### 4.3 文档处理策略
+### 4.4 文档处理策略
 
 - 切块参数：`chunk_size=800`, `chunk_overlap=150`
 - 分隔符：`["\n\n", "\n", "。", "；", "，", " ", ""]`
